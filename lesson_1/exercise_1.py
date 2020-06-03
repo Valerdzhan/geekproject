@@ -1,0 +1,10 @@
+exercise = 'exercise 1'
+print(exercise)
+name = input('Enter you name:')
+lastname = input('Enter last name:')
+age = int(input('Enter you age:'))
+city = input('Enter you city:')
+print(name)
+print(lastname)
+print(age)
+print(city)
