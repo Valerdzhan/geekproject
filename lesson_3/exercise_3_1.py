@@ -5,16 +5,23 @@
 var_1 = int(input('Введите делимое: '))
 var_2 = None
 while True:
-    a = int(input('Введите делитель: '))
-    if a == 0:
+    div = int(input('Введите делитель: '))
+    if div == 0:
         print('Делить на 0 нельзя')
         continue
     else:
-        var_2 = a
+        var_2 = div
         break
 
 
 def my_func(a, b):
+    """
+    Функция деления
+
+    :param a: делимое
+    :param b: делитель (деление на 0 запрещено)
+    :return: результат деления a / b
+    """
     return a / b
 
 
