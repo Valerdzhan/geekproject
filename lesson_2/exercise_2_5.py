@@ -25,7 +25,7 @@ print(f"Отсортированный список: {my_list}")
 if num in my_list:
     # Если входит, то находим индекс этого числа и вставляем после
     index = my_list.index(num)
-    my_list.insert(index + 1, num)
+    my_list.insert(index + my_list.count(num), float(num))
 else:
     # Если не входит то определяем куда вставлять в начало или в конец
     index = length
