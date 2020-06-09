@@ -9,16 +9,12 @@
 while True:
     global num_1
     num_1 = int(input('Введите действительное положительное число x: '))
-    if num_1 < 0:
-        continue
-    else:
+    if num_1 > 0:
         break
 while True:
     global num_2
     num_2 = int(input('Введите целое отрицательное число y: '))
-    if num_2 > 0:
-        continue
-    else:
+    if num_2 < 0:
         break
 
 

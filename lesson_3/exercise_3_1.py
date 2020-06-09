@@ -8,7 +8,6 @@ while True:
     div = int(input('Введите делитель: '))
     if div == 0:
         print('Делить на 0 нельзя')
-        continue
     else:
         var_2 = div
         break
@@ -25,4 +24,4 @@ def my_func(a, b):
     return a / b
 
 
-print(my_func(var_1, var_2))
+print(f"{round(my_func(var_1, var_2), 2)}")

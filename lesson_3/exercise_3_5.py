@@ -22,7 +22,5 @@ while True:
             is_continue = False
             break
     print(f"Summa: {sum}")
-    if is_continue:
-        continue
-    else:
+    if not is_continue:
         break
