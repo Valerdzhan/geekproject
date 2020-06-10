@@ -6,12 +6,18 @@
 
 from sys import argv
 
-script_name, hours, hourly_payment, premium = argv
+try:
+    script_name, hours, hourly_payment, premium = argv
 
 
-def profit(_hours, _hourly_payment, _premium):
-    return int(_hours) * float(_hourly_payment) + float(_premium)
+    def profit(_hours, _hourly_payment, _premium):
+        try:
+            return print(f"Заработная плата равна - {int(_hours) * float(_hourly_payment) + float(_premium)}")
+        except ValueError:
+            print('Введены неверные параметры')
 
 
-print("Имя скрипта: ", script_name)
-print(f"Заработная плата равна - {profit(hours, hourly_payment, premium)}")
+    print("Имя скрипта: ", script_name)
+    profit(hours, hourly_payment, premium)
+except ValueError:
+    print('Проверьте правильность введенных параметров')
