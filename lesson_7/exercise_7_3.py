@@ -67,8 +67,11 @@ class Cell:
 
 my_cell_1 = Cell(15)
 my_cell_2 = Cell(10)
-print(my_cell_1 + my_cell_2)
-print(my_cell_1 - my_cell_2)
-print(my_cell_1 * my_cell_2)
-print(my_cell_1 / my_cell_2)
-my_cell_1.make_order(19)
+print(f"Сложение {my_cell_1 + my_cell_2}")
+print(f"Вычитание {my_cell_1 - my_cell_2}")
+print(f"Умножение {my_cell_1 * my_cell_2}")
+print(f"Деление {my_cell_1 / my_cell_2}")
+print(f"{my_cell_2 - my_cell_1}")
+print(f"{my_cell_2 / my_cell_1}")
+
+my_cell_1.make_order(4)
